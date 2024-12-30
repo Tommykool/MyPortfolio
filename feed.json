@@ -1,0 +1,13 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "CODINGWITHME",
+    "description": "",
+    "home_page_url": "https://tommykool.github.io/MyPortfolio",
+    "feed_url": "https://tommykool.github.io/MyPortfolio/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "QUANG MINH"
+    },
+    "items": [
+    ]
+}
