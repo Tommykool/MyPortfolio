@@ -3,10 +3,1533 @@
     <title>CODINGWITHME</title>
     <link href="https://tommykool.github.io/MyPortfolio/feed.xml" rel="self" />
     <link href="https://tommykool.github.io/MyPortfolio" />
-    <updated>1970-01-01T07:00:00+07:00</updated>
+    <updated>2024-12-31T01:29:57+07:00</updated>
     <author>
         <name>QUANG MINH</name>
     </author>
     <id>https://tommykool.github.io/MyPortfolio</id>
 
+    <entry>
+        <title>JavaScript Const</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-const.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-const.html</id>
+
+        <updated>2024-12-31T01:29:57+07:00</updated>
+            <summary>
+                <![CDATA[
+                    The const keyword was introduced in ES6 (2015) Variables defined with const cannot be Redeclared Variables defined with const cannot be Reassigned Variables&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    The <code>const</code> keyword was introduced in ES6 (2015)
+<br>
+<br>Variables defined with <code>const</code> cannot be <strong>Redeclared</strong>
+<br>
+<br>Variables defined with <code>const </code>cannot be <strong>Reassigned
+<br></strong>
+<br>Variables defined with <code>const</code> have Block <strong>Scope</strong>
+  </p>
+
+    <h3 id="cannot-be-reassigned">
+      Cannot be Reassigned
+    </h3>
+
+  <p>
+    A variable defined with the const keyword cannot be reassigned:
+  </p>
+<pre class="line-numbers  language-javascript"><code>const PI = 3.141592653589793;
+PI = 3.14;      // This will give an error
+PI = PI + 10;   // This will also give an error</code></pre>
+
+    <h3 id="must-be-assigned">
+      Must be Assigned
+    </h3>
+
+  <p>
+    JavaScript <code>const</code> variables must be assigned a value when they are declared:
+  </p>
+<pre class="line-numbers  language-javascript"><code>const PI = 3.14159265359;//this is correct</code></pre>
+<pre class="line-numbers  language-javascript"><code>const PI;
+PI = 3.14159265359;//this is incorrect</code></pre>
+
+    <h3 id="when-to-use-javascript-const">
+      When to use JavaScript const?
+    </h3>
+
+  <p>
+    <strong>Always declare a variable with <code>const</code> when you know that the value should not be changed.</strong>
+  </p>
+
+  <p>
+    Use <code>const</code> when you declare:
+  </p>
+
+  <ul>
+    <li>A new Array</li><li>A new Object<br></li><li>A new Function<br></li><li>A new RegExp<br></li>
+  </ul>
+
+    <h3 id="constant-objects-and-arrays">
+      Constant Objects and Arrays
+    </h3>
+
+  <p>
+    The keyword<code> const </code>is a little misleading.
+<br>
+<br>It does not define a constant value. It defines a constant reference to a value.
+<br>
+<br>Because of this you can <strong>NOT</strong>:
+  </p>
+
+  <ul>
+    <li>Reassign a constant value</li><li>Reassign a constant array<br></li><li>Reassign a constant object<br></li>
+  </ul>
+
+  <p>
+    But you <strong>CAN:</strong>
+  </p>
+
+  <ul>
+    <li>Change the elements of constant array</li><li>Change the properties of constant object<br></li>
+  </ul>
+
+    <h3 id="constant-arrays">
+      Constant Arrays
+    </h3>
+
+  <p>
+    You can change the elements of a constant array:
+  </p>
+<pre class="line-numbers  language-javascript"><code>// You can create a constant array:
+const cars = ["Saab", "Volvo", "BMW"];
+
+// You can change an element:
+cars[0] = "Toyota";
+
+// You can add an element:
+cars.push("Audi");</code></pre>
+
+  <p>
+    But you can <strong>NOT</strong> reassign the array:
+  </p>
+<pre class="line-numbers  language-javascript"><code>const cars = ["Saab", "Volvo", "BMW"];
+
+cars = ["Toyota", "Volvo", "Audi"];    // ERROR</code></pre>
+
+    <h3 id="constant-objects">
+      Constant Objects
+    </h3>
+
+  <p>
+    You can change the properties of a constant object:
+  </p>
+<pre class="line-numbers  language-javascript"><code>// You can create a const object:
+const car = {type:"Fiat", model:"500", color:"white"};
+
+// You can change a property:
+car.color = "red";
+
+// You can add a property:
+car.owner = "Johnson";</code></pre>
+
+  <p>
+    But you can <strong>NOT</strong> reassign the object:
+  </p>
+<pre class="line-numbers  language-javascript"><code>const car = {type:"Fiat", model:"500", color:"white"};
+
+car = {type:"Volvo", model:"EX60", color:"red"};    // ERROR</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>JavaScript Let</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-let.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-let.html</id>
+
+        <updated>2024-12-31T01:19:14+07:00</updated>
+            <summary>
+                <![CDATA[
+                    The let keyword was introduced in ES6 (2015) Variables declared with let have Block Scope Variables declared with let must be Declared before&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    The <code>let</code> keyword was introduced in ES6 (2015)
+<br>
+<br>Variables declared with <code>let </code>have <strong>Block</strong> Scope
+<br>
+<br>Variables declared with <code>let</code> must be <strong>Declared </strong>before use
+<br>
+<br>Variables declared with <code>let </code>cannot be<strong> Redeclared</strong> in the same scope
+  </p>
+
+    <h3 id="block-scope">
+      Block Scope
+    </h3>
+
+  <p>
+    Before ES6 (2015), JavaScript did not have<strong> Block Scope</strong>.
+<br>
+<br>JavaScript had<strong> Global Scope </strong>and <strong>Function Scope</strong>.
+<br>
+<br>ES6 introduced the two new JavaScript keywords: <code>let</code> and <code>cons</code>t.
+<br>
+<br>These two keywords provided<strong> Block Scope</strong> in JavaScript:
+  </p>
+<pre class="line-numbers  language-javascript"><code>{
+  let x = 2;
+}
+// x can NOT be used here</code></pre>
+
+    <h3 id="global-scope">
+      Global Scope
+    </h3>
+
+  <p>
+    Variables declared with the<code> var</code> always have<strong> Global Scope</strong>.
+<br>
+<br>Variables declared with the <code>var</code> keyword can<strong> NOT</strong> have<strong> block scope</strong>:
+  </p>
+<pre class="line-numbers  language-javascript"><code>{
+  var x = 2;
+}
+// x CAN be used here</code></pre>
+
+    <h3 id="cannot-be-redeclaredlessbrgreater">
+      Cannot be Redeclared<br>
+    </h3>
+
+  <p>
+    Variables defined with <code>let</code> <strong>can not</strong> be redeclared.
+<br>
+<br>You can not accidentally redeclare a variable declared with <code>let</code>.
+  </p>
+<pre class="line-numbers  language-javascript"><code>let x = "John Doe";
+//This is wrong
+let x = 0;</code></pre>
+<pre class="line-numbers  language-javascript"><code>var x = "John Doe";
+//This is correct
+var x = 0;</code></pre>
+
+    <h3 id="redeclaring-variables">
+      Redeclaring Variables
+    </h3>
+
+  <p>
+    Redeclaring a variable using the var keyword can impose problems.
+<br>
+<br>Redeclaring a variable inside a block will also redeclare the variable outside the block:
+  </p>
+<pre class="line-numbers  language-javascript"><code>var x = 10;
+// Here x is 10
+
+{
+var x = 2;
+// Here x is 2
+}
+
+// Here x is 2</code></pre>
+
+  <p>
+    Redeclaring a variable using the let keyword can solve this problem.
+<br>
+<br>Redeclaring a variable inside a block will not redeclare the variable outside the block:
+  </p>
+<pre class="line-numbers  language-javascript"><code>let x = 10;
+// Here x is 10
+
+{
+let x = 2;
+// Here x is 2
+}
+
+// Here x is 10</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>JavaScript Variables</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-variables.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-variables.html</id>
+
+        <updated>2024-12-31T01:06:13+07:00</updated>
+            <summary>
+                <![CDATA[
+                    Variables are Containers for Storing Data JavaScript Variables can be declared in 4 ways: In this first example, x, y, and z are&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+    <h3 id="variables-are-containers-for-storing-data">
+      Variables are Containers for Storing Data
+    </h3>
+
+  <p>
+    JavaScript Variables can be declared in 4 ways:
+  </p>
+
+  <ul>
+    <li>Automatically</li><li>Using <code>var</code><br></li><li>Using<code> let</code><br></li><li>Using <code>const</code><br></li>
+  </ul>
+
+  <p>
+    In this first example, <code>x, y</code>, and <code>z</code> are undeclared variables.
+<br>
+<br>They are automatically declared when first used:
+  </p>
+<pre class="line-numbers  language-javascript"><code>x = 5;
+y = 6;
+z = x + y;</code></pre>
+
+    <blockquote class="blockquote">
+      <strong>Note</strong>
+<br>It is considered good programming practice to always declare variables before use.
+    </blockquote>
+
+  <p>
+    From the examples you can guess:
+  </p>
+
+  <ul>
+    <li>x stores the value 5</li><li>y stores the value 6<br></li><li>z stores the value 11<br></li>
+  </ul>
+<pre class="line-numbers  language-javascript"><code>var x = 5;
+var y = 6;
+var z = x + y;</code></pre>
+
+    <blockquote class="blockquote">
+      <strong>Note</strong>
+<br>The <code>var</code> keyword was used in all JavaScript code from 1995 to 2015.
+<br>
+<br>The <code>let </code>and <code>const</code> keywords were added to JavaScript in 2015.
+<br>
+<br>The <code>var</code> keyword should only be used in code written for older browsers.
+    </blockquote>
+<pre class="line-numbers  language-javascript"><code>let x = 5;
+let y = 6;
+let z = x + y;</code></pre>
+<pre class="line-numbers  language-javascript"><code>const x = 5;
+const y = 6;
+const z = x + y;</code></pre>
+<pre class="line-numbers  language-javascript"><code>const price1 = 5;
+const price2 = 6;
+let total = price1 + price2;</code></pre>
+
+  <p>
+    The two variables <code>price1</code> and <code>price2</code> are declared with the <code>const</code> keyword.
+<br>
+<br>These are constant values and cannot be changed.
+<br>
+<br>The variable <code>total </code>is declared with the <code>let</code> keyword.
+<br>
+<br>The value <code>total</code> can be changed.
+  </p>
+
+    <blockquote class="blockquote">
+      When to Use var, let, or const?<br><br>1. Always declare variables
+<br>
+<br>2. Always use <code>const</code> if the value should not be changed
+<br>
+<br>3. Always use <code>const</code> if the type should not be changed (Arrays and Objects)
+<br>
+<br>4. Only use <code>let</code> if you can't use <code>const</code>
+<br>
+<br>5. Only use <code>var</code> if you MUST support old browsers.<br><br>
+    </blockquote>
+
+    <h3 id="just-like-algebra">
+      Just Like Algebra
+    </h3>
+
+  <p>
+    Just like in algebra, variables hold values:
+  </p>
+<pre class="line-numbers  language-javascript"><code>let x = 5;
+let y = 6;</code></pre>
+
+  <p>
+    Just like in algebra, variables are used in expressions:
+  </p>
+<pre class="line-numbers  language-javascript"><code>let z = x + y;</code></pre>
+
+  <p>
+    From the example above, you can guess that the total is calculated to be 11.
+  </p>
+
+    <blockquote class="blockquote">
+      <strong>Note</strong>
+<br>Variables are containers for storing values.
+    </blockquote>
+
+    <h3 id="javascript-identifiers">
+      JavaScript Identifiers
+    </h3>
+
+  <p>
+    All JavaScript variables must be identified with unique names.
+<br>
+<br>These unique names are called identifiers.
+<br>
+<br>Identifiers can be short names (like x and y) or more descriptive names (age, sum, totalVolume).
+<br>
+<br>The general rules for constructing names for variables (unique identifiers) are:
+  </p>
+
+  <ul>
+    <li>Names can contain letters, digits, underscores, and dollar signs.</li><li>Names must begin with a letter.<br></li><li>Names can also begin with $ and _ (but we will not use it in this tutorial).<br></li><li>Names are case sensitive (y and Y are different variables).<br></li><li>Reserved words (like JavaScript keywords) cannot be used as names.<br></li>
+  </ul>
+
+    <blockquote class="blockquote">
+      <strong>Note</strong>
+<br>JavaScript identifiers are case-sensitive.
+    </blockquote>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>JavaScript Syntax</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-syntax.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-syntax.html</id>
+
+        <updated>2024-12-31T00:55:28+07:00</updated>
+            <summary>
+                <![CDATA[
+                    JavaScript syntax is the set of rules, how JavaScript programs are constructed: // How to create variables: var x; let y; // How&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+  <p>
+    JavaScript syntax is the set of rules, how JavaScript programs are constructed:
+  </p>
+<pre class="line-numbers  language-javascript"><code>// How to create variables:
+var x;
+let y;
+
+// How to use variables:
+x = 5;
+y = 6;
+let z = x + y;</code></pre>
+
+    <h3 id="javascript-values">
+      JavaScript Values
+    </h3>
+
+  <p>
+    The JavaScript syntax defines two types of values:
+  </p>
+
+  <ul>
+    <li>Fixed values</li><li>Variable values<br></li>
+  </ul>
+
+  <p>
+    Fixed values are called Literals.
+<br>
+<br>Variable values are called Variables.
+  </p>
+
+    <h3 id="javascript-literals">
+      JavaScript Literals
+    </h3>
+
+  <p>
+    The two most important syntax rules for fixed values are:
+<br>
+<br>1. Numbers are written with or without decimals:
+  </p>
+<pre class="line-numbers  language-javascript"><code>10.50
+
+1001</code></pre>
+
+  <p>
+    2. Strings are text, written within double or single quotes:
+  </p>
+<pre class="line-numbers  language-javascript"><code>"John Doe"
+
+'John Doe'</code></pre>
+
+    <h3 id="javascript-variables">
+      JavaScript Variables
+    </h3>
+
+  <p>
+    In a programming language, variables are used to store data values.
+<br>
+<br>JavaScript uses the keywords var, let and const to declare variables.
+<br>
+<br>An equal sign is used to assign values to variables.
+<br>
+<br>In this example, x is defined as a variable. Then, x is assigned (given) the value 6:
+  </p>
+<pre class="line-numbers  language-javascript"><code>let x;
+x = 6;</code></pre>
+
+    <h3 id="javascript-operators">
+      JavaScript Operators
+    </h3>
+
+  <p>
+    JavaScript uses arithmetic operators ( + - * / ) to compute values:
+  </p>
+<pre class="line-numbers  language-javascript"><code>(5 + 6) * 10</code></pre>
+
+  <p>
+    JavaScript uses an assignment operator ( = ) to assign values to variables:
+  </p>
+<pre class="line-numbers  language-javascript"><code>let x, y;
+x = 5;
+y = 6;</code></pre>
+
+    <h3 id="javascript-expressions">
+      JavaScript Expressions
+    </h3>
+
+  <p>
+    An expression is a combination of values, variables, and operators, which computes to a value.
+<br>
+<br>The computation is called an evaluation.
+<br>
+<br>For example, 5 * 10 evaluates to 50:
+  </p>
+<pre class="line-numbers  language-javascript"><code>5 * 10</code></pre>
+
+  <p>
+    Expressions can also contain variable values:
+  </p>
+<pre class="line-numbers  language-javascript"><code>x * 10</code></pre>
+
+  <p>
+    The values can be of various types, such as numbers and strings.
+<br>
+<br>For example, "John" + " " + "Doe", evaluates to "John Doe":
+  </p>
+<pre class="line-numbers  language-javascript"><code>"John" + " " + "Doe"</code></pre>
+
+    <h3 id="javascript-keywords">
+      JavaScript Keywords
+    </h3>
+
+  <p>
+    JavaScript keywords are used to identify actions to be performed.
+<br>
+<br>The let keyword tells the browser to create variables:
+  </p>
+<pre class="line-numbers  language-javascript"><code>let x, y;
+x = 5 + 6;
+y = x * 10;</code></pre>
+
+  <p>
+    The <code>var</code> keyword also tells the browser to create variables:
+  </p>
+<pre class="line-numbers  language-javascript"><code>var x, y;
+x = 5 + 6;
+y = x * 10;</code></pre>
+
+    <blockquote class="blockquote">
+      In these examples, using var or let will produce the same result.
+<br>
+<br>You will learn more about var and let later in this tutorial.
+    </blockquote>
+
+    <h3 id="javascript-comments">
+      JavaScript Comments
+    </h3>
+
+  <p>
+    Not all JavaScript statements are "executed".
+<br>
+<br>Code after double slashes // or between /* and */ is treated as a comment.
+<br>
+<br>Comments are ignored, and will not be executed:
+  </p>
+<pre class="line-numbers  language-javascript"><code>let x = 5;   // I will be executed
+
+// x = 6;   I will NOT be executed</code></pre>
+
+    <blockquote class="blockquote">
+      You will learn more about comments in a later chapter.
+    </blockquote>
+
+    <h3 id="javascript-identifiers-names">
+      JavaScript Identifiers / Names
+    </h3>
+
+  <p>
+    Identifiers are JavaScript names.
+<br>
+<br>Identifiers are used to name variables and keywords, and functions.
+<br>
+<br>The rules for legal names are the same in most programming languages.
+<br>
+<br>A JavaScript name must begin with:
+  </p>
+
+  <ul>
+    <li>A letter (A-Z or a-z)</li><li>A dollar sign ($)<br></li><li>Or an underscore (_)<br></li>
+  </ul>
+
+  <p>
+    Subsequent characters may be letters, digits, underscores, or dollar signs.
+  </p>
+
+    <blockquote class="blockquote">
+      <strong>Note</strong>
+<br>Numbers are not allowed as the first character in names.
+<br>
+<br>This way JavaScript can easily distinguish identifiers from numbers.
+    </blockquote>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>JavaScript Statements</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-statements.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-statements.html</id>
+
+        <updated>2024-12-31T00:40:39+07:00</updated>
+            <summary>
+                <![CDATA[
+                    JavaScript Programs A computer program is a list of "instructions" to be "executed" by a computer. In a programming language, these programming instructions&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+    <h3 id="javascript-programs">
+      JavaScript Programs
+    </h3>
+
+  <p>
+    A computer program is a list of "instructions" to be "executed" by a computer.
+<br>
+<br>In a programming language, these programming instructions are called statements.
+<br>
+<br>A JavaScript program is a list of programming statements.
+  </p>
+
+    <blockquote class="blockquote">
+      In HTML, JavaScript programs are executed by the web browser.
+    </blockquote>
+
+    <h3 id="javascript-statements">
+      JavaScript Statements
+    </h3>
+
+  <p>
+    JavaScript statements are composed of:
+<br>
+<br>Values, Operators, Expressions, Keywords, and Comments.
+<br>
+<br>This statement tells the browser to write "Hello Dolly." inside an HTML element with id="demo":
+  </p>
+<pre class="line-numbers  language-javascript"><code>document.getElementById("demo").innerHTML = "Hello Dolly.";</code></pre>
+
+  <p>
+    Most JavaScript programs contain many JavaScript statements.
+<br>
+<br>The statements are executed, one by one, in the same order as they are written.
+  </p>
+
+    <blockquote class="blockquote">
+      JavaScript programs (and JavaScript statements) are often called JavaScript code.
+    </blockquote>
+
+    <h3 id="semicolons">
+      Semicolons ;
+    </h3>
+
+  <p>
+    Semicolons separate JavaScript statements.
+<br>
+<br>Add a semicolon at the end of each executable statement:
+  </p>
+<pre class="line-numbers  language-javascript"><code>let a, b, c;  // Declare 3 variables
+a = 5;        // Assign the value 5 to a
+b = 6;        // Assign the value 6 to b
+c = a + b;    // Assign the sum of a and b to c</code></pre>
+
+  <p>
+    When separated by semicolons, multiple statements on one line are allowed:
+  </p>
+<pre class="line-numbers  language-html"><code>a = 5; b = 6; c = a + b;</code></pre>
+
+    <blockquote class="blockquote">
+      On the web, you might see examples without semicolons.
+<br>Ending statements with semicolon is not required, but highly recommended.
+    </blockquote>
+
+    <h3 id="javascript-white-space">
+      JavaScript White Space
+    </h3>
+
+  <p>
+    JavaScript ignores multiple spaces. You can add white space to your script to make it more readable.
+<br>
+<br>The following lines are equivalent:
+  </p>
+<pre class="line-numbers  language-javascript"><code>let person = "Hege";
+let person="Hege";</code></pre>
+
+  <p>
+    A good practice is to put spaces around operators ( = + - * / ):
+  </p>
+<pre class="line-numbers  language-javascript"><code>let x = y + z;</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>JavaScript Output</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-output.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-output.html</id>
+
+        <updated>2024-12-31T00:34:23+07:00</updated>
+            <summary>
+                <![CDATA[
+                    JavaScript Display Possibilities JavaScript can "display" data in different ways: To access an HTML element, JavaScript can use the document.getElementById(id) method. The id&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+    <h3 id="javascript-display-possibilities">
+      JavaScript Display Possibilities
+    </h3>
+
+  <p>
+    JavaScript can "display" data in different ways:
+  </p>
+
+  <ul>
+    <li>Writing into an HTML element, using<code> innerHTML</code></li><li>Writing into the HTML output using <code>document.write()</code>.<br></li><li>Writing into an alert box, using <code>window.alert()</code>.<br></li><li>Writing into the browser console, using <code>console.log()</code>.<br></li>
+  </ul>
+
+    <h3 id="using-innerhtml">
+      Using innerHTML
+    </h3>
+
+  <p>
+    To access an HTML element, JavaScript can use the <code>document.getElementById(id)</code> method.
+<br>
+<br>The<code> id </code>attribute defines the HTML element. The <code>innerHTML </code>property defines the HTML content:
+  </p>
+<pre class="line-numbers  language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My First Paragraph&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo").innerHTML = 5 + 6;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_dom";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+    <blockquote class="blockquote">
+      Changing the innerHTML property of an HTML element is a common way to display data in HTML.
+    </blockquote>
+
+    <h3 id="using-documentwrite">
+      Using document.write()
+    </h3>
+
+  <p>
+    For testing purposes, it is convenient to use<code> document.write()</code>:
+  </p>
+<pre class="line-numbers  language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+document.write(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_write";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+    <blockquote class="blockquote">
+      WARNING!&nbsp;Using document.write() after an HTML document is loaded, will delete all existing HTML:
+    </blockquote>
+
+    <h3 id="using-windowalert">
+      Using window.alert()
+    </h3>
+
+  <p>
+    You can use an alert box to display data:
+  </p>
+<pre class="line-numbers  language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+window.alert(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_alert";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+  <p>
+    You can skip the <code>window</code> keyword.
+<br>
+<br>In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:
+  </p>
+<pre class="line-numbers  language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+alert(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>JavaScript Where To</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-where-to.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-where-to.html</id>
+
+        <updated>2024-12-31T00:24:41+07:00</updated>
+            <summary>
+                <![CDATA[
+                    The &lt;script&gt; Tag&nbsp; In HTML, JavaScript code is inserted between tags. &lt;script&gt; document.getElementById("demo").innerHTML = "My First JavaScript"; &lt;/script&gt; Try It Yourself Example Try&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+    <h3 id="the-andltscriptandgt-tagandnbsplessscriptgreater-taglessscriptgreaterlessscriptgreater-taglessscriptgreater">
+      The &lt;script&gt; Tag&nbsp;<script> Tag</script><script> Tag</script>
+    </h3>
+
+  <p>
+    In HTML, JavaScript code is inserted between <script> and </script> tags.
+  </p>
+<pre class="line-numbers  language-javascript"><code>&lt;script&gt;
+document.getElementById("demo").innerHTML = "My First JavaScript";
+&lt;/script&gt;</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+    <blockquote class="blockquote">
+      Old JavaScript examples may use a type attribute:&lt;script type="text/javascript"&gt; .<br>The type attribute is not required. JavaScript is the default scripting language in HTML.<br><script type="text/javascript">.
+<br>The type attribute is not required. JavaScript is the default scripting language in HTML.</script>
+    </blockquote>
+
+    <h3 id="javascript-functions-and-events">
+      JavaScript Functions and Events
+    </h3>
+
+  <p>
+    A JavaScript function is a block of JavaScript code, that can be executed when "called" for.
+<br>
+<br>For example, a function can be called when an event occurs, like when the user clicks a button.
+  </p>
+
+    <blockquote class="blockquote">
+      You will learn much more about functions and events in later chapters.
+    </blockquote>
+
+    <h3 id="javascript-in-andltheadandgt-or-andltbodyandgtandnbsp">
+      JavaScript in &lt;head&gt; or &lt;body&gt;&nbsp;
+    </h3>
+
+  <p>
+    You can place any number of scripts in an HTML document.
+<br>
+<br>Scripts can be placed in the , or in the  section of an HTML page, or in both.
+  </p>
+
+    <h3 id="javascript-in-andltheadandgtandnbsp">
+      JavaScript in &lt;head&gt;&nbsp;
+    </h3>
+
+  <p>
+    In this example, a JavaScript function is placed in the  section of an HTML page.
+<br>
+<br>The function is invoked (called) when a button is clicked:
+  </p>
+<pre class="line-numbers  language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+&lt;script&gt;
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;h2&gt;Demo JavaScript in Head&lt;/h2&gt;
+
+&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_head";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+    <h3 id="javascript-in-andltbodyandgt">
+      JavaScript in &lt;body&gt;
+    </h3>
+
+  <p>
+    In this example, a JavaScript <code>function</code> is placed in the <code>&lt;body&gt;</code> section of an HTML page.
+<br>
+<br>The function is invoked (called) when a button is clicked:
+  </p>
+<pre class="line-numbers  language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h2&gt;Demo JavaScript in Body&lt;/h2&gt;
+
+&lt;p id="demo"&gt;A Paragraph&lt;/p&gt;
+
+&lt;button type="button" onclick="myFunction()"&gt;Try it&lt;/button&gt;
+
+&lt;script&gt;
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_whereto_body";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+    <blockquote class="blockquote">
+      Placing scripts at the bottom of the  element improves the display speed, because script interpretation slows down the display.
+    </blockquote>
+
+    <h3 id="external-javascript">
+      External JavaScript
+    </h3>
+
+  <p>
+    Scripts can also be placed in external files:
+  </p>
+<pre class="line-numbers  language-javascript"><code>function myFunction() {
+  document.getElementById("demo").innerHTML = "Paragraph changed.";
+}</code></pre>
+
+  <p>
+    External scripts are practical when the same code is used in many different web pages.
+<br>
+<br>JavaScript files have the file extension .js.
+<br>
+<br>To use an external script, put the name of the script file in the <code>src</code> (source) attribute of a <code>&lt;script&gt;</code> tag<script> tag:</script>
+  </p>
+
+  <p>
+    You can place an external script reference in <code>&lt;head&gt;</code> or <code>&lt;body&gt;</code>&nbsp; as you like.
+<br>
+<br>The script will behave as if it was located exactly where the <code>&lt;script&gt;</code> tag is closed<script> tag is located.</script>
+  </p>
+
+  <p>
+    
+  </p>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>JavaScript Introduction</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-introduction.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-introduction.html</id>
+
+        <updated>2024-12-31T00:13:29+07:00</updated>
+            <summary>
+                <![CDATA[
+                    JavaScript Can Change HTML Content One of many JavaScript HTML methods is getElementById(). The example below "finds" an HTML element (with id="demo"), and&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                
+    <h3 id="javascript-can-change-html-content">
+      JavaScript Can Change HTML Content
+    </h3>
+
+  <p>
+    One of many JavaScript HTML methods is getElementById().
+<br>
+<br>The example below "finds" an HTML element (with id="demo"), and changes the element content (innerHTML) to "Hello JavaScript":
+  </p>
+<pre class="line-numbers  language-javascript"><code>document.getElementById("demo").innerHTML = "Hello JavaScript";</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+    <blockquote class="blockquote">
+      JavaScript accepts both double and single quotes:
+    </blockquote>
+<pre class="line-numbers  language-javascript"><code>document.getElementById('demo').innerHTML = 'Hello JavaScript';</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_inner_html_quotes";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+    <h3 id="javascript-can-change-html-attribute-values">
+      JavaScript Can Change HTML Attribute Values
+    </h3>
+
+  <p>
+    In this example JavaScript changes the value of the src (source) attribute of an <img loading="lazy" tag:
+  </p>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbulb Control</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #fff;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .button {
+            padding: 10px 20px;
+            margin: 0 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: #fff;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        .lightbulb {
+            width: 100px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="button" onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulbon.gif'">Turn on the light</button>
+        <img loading="lazy" id="myImage" class="lightbulb" src="https://www.w3schools.com/js/pic_bulboff.gif" alt="Lightbulb"> data-is-external-image="true">
+        <button class="button" onclick="document.getElementById('myImage').src='https://www.w3schools.com/js/pic_bulboff.gif'">Turn off the light</button>
+    </div>
+</body>
+</html>
+</div>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html></div>
+
+    <h3 id="javascript-can-change-html-styles-css">
+      JavaScript Can Change HTML Styles (CSS)
+    </h3>
+
+  <p>
+    Changing the style of an HTML element, is a variant of changing an HTML attribute:
+  </p>
+<pre class="line-numbers  language-javascript"><code>document.getElementById("demo").style.fontSize = "35px";</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_style";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+    <h3 id="javascript-can-hide-html-elements">
+      JavaScript Can Hide HTML Elements
+    </h3>
+
+  <p>
+    Hiding HTML elements can be done by changing the display style:
+  </p>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_hide";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html>
+</div>
+
+    <h3 id="javascript-can-show-html-elements">
+      JavaScript Can Show HTML Elements
+    </h3>
+
+  <p>
+    Showing hidden HTML elements can also be done by changing the display style:
+  </p>
+<pre class="line-numbers  language-javascript"><code>document.getElementById("demo").style.display = "block";</code></pre>
+<div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Try It Yourself Example</title>
+</head>
+<body>
+    <!-- Button -->
+    <button onclick="openTryIt()">Try It Yourself</button>
+
+    <script>
+        function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_show";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }
+    </script>
+</body>
+</html></div>
+
+    <blockquote class="blockquote">
+      Did You Know?
+<br>JavaScript and Java are completely different languages, both in concept and design.
+<br>
+<br>JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+<br>
+<br>ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+    </blockquote>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>JavaScript For Beginner</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-for-beginner.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-for-beginner.html</id>
+
+        <updated>2024-12-30T23:53:51+07:00</updated>
+            <summary>
+                <![CDATA[
+                    JavaScript Overview What is JavaScript? JavaScript Where To? JavaScript Output JavaScript Statements JavaScript Syntax JavaScript Basics JavaScript Variables JavaScript Let JavaScript Const
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <h2 id="overview-of-java">JavaScript Overview</h2>
+<ul>
+<li style="list-style-type: none;">
+<ul>
+<li value="1"><a href="https://tommykool.github.io/MyPortfolio/javascript-introduction.html" target="_blank" rel="noopener noreferrer">What is JavaScript?</a></li>
+<li value="2"><a href="https://tommykool.github.io/MyPortfolio/javascript-where-to.html" target="_blank" rel="noopener noreferrer">JavaScript Where To?</a></li>
+<li value="5"><a href="https://tommykool.github.io/MyPortfolio/javascript-output.html" target="_blank" rel="noopener noreferrer">JavaScript Output</a></li>
+<li value="6"><a href="https://tommykool.github.io/MyPortfolio/javascript-statements.html" target="_blank" rel="noopener noreferrer">JavaScript Statements</a></li>
+<li value="7"><a href="https://tommykool.github.io/MyPortfolio/javascript-syntax.html" target="_blank" rel="noopener noreferrer">JavaScript Syntax</a></li>
+</ul>
+</li>
+<li>
+<h2 id="basics-of-java">JavaScript Basics</h2>
+<ul>
+<li value="1"><a href="https://tommykool.github.io/MyPortfolio/javascript-variables.html" target="_blank" rel="noopener noreferrer">JavaScript Variables</a></li>
+<li value="3"><a href="https://tommykool.github.io/MyPortfolio/javascript-let.html" target="_blank" rel="noopener noreferrer">JavaScript Let</a></li>
+<li value="4">JavaScript Const</li>
+</ul>
+</li>
+</ul>
+            ]]>
+        </content>
+    </entry>
+    <entry>
+        <title>JavaScript Learning Roadmap</title>
+        <author>
+            <name>QUANG MINH</name>
+        </author>
+        <link href="https://tommykool.github.io/MyPortfolio/javascript-learning-roadmap.html"/>
+        <id>https://tommykool.github.io/MyPortfolio/javascript-learning-roadmap.html</id>
+
+        <updated>2024-12-30T23:53:24+07:00</updated>
+            <summary>
+                <![CDATA[
+                    .roadmap post-template { background-color: #1e252c; } JavaScript for Beginners: Your First Step into Web Development Introduction to JavaScript, setting up your development environment,&hellip;
+                ]]>
+            </summary>
+        <content type="html">
+            <![CDATA[
+                <div><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .roadmap post-template {
+            background-color: #1e252c;
+        }
+    </style>
+</head>
+<body>
+    <div class="roadmap post-template">
+
+        <div class="step">
+        <a href="/javascript-for-beginner" target="_blank">
+            <h2>JavaScript for Beginners: Your First Step into Web Development</h2>
+            <p>Introduction to JavaScript, setting up your development environment, and writing your first script.</p>
+        </div>
+
+        <div class="step">
+            <h2>JavaScript for Intermediates: Understanding the DOM and Events</h2>
+            <p>Dive deeper into manipulating the DOM, handling user events, and making interactive web pages.</p>
+        </div>
+
+        <div class="step">
+            <h2>JavaScript for Advanced Learners: Mastering Asynchronous Programming</h2>
+            <p>Learn advanced topics like promises, async/await, and working with APIs.</p>
+        </div>
+
+        <div class="step">
+            <h2>JavaScript for Developers: Building Web Applications</h2>
+            <p>Understand modern frameworks, tools, and best practices to create dynamic web applications.</p>
+        </div>
+
+        <div class="step">
+            <h2>JavaScript for Experts: Optimizing Performance and Code Quality</h2>
+            <p>Focus on efficient coding techniques, debugging, and writing clean, maintainable code.</p>
+        </div>
+
+        <div class="step">
+            <h2>JavaScript for Masters: Full-Stack Development</h2>
+            <p>Learn server-side JavaScript with Node.js and build full-stack applications using modern frameworks.</p>
+        </div>
+
+    </div>
+</body>
+</html>
+</div>
+            ]]>
+        </content>
+    </entry>
 </feed>
