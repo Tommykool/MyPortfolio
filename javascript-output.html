@@ -1,0 +1,82 @@
+<!DOCTYPE html><html lang="en-gb"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no"><title>JavaScript Output - CODINGWITHME</title><meta name="description" content="JavaScript Display Possibilities JavaScript can 'display' data in different ways: To access an HTML element, JavaScript can use the document.getElementById(id) method. The id&hellip;"><meta name="generator" content="Publii Open-Source CMS for Static Site"><link rel="canonical" href="https://tommykool.github.io/MyPortfolio/javascript-output.html"><link rel="alternate" type="application/atom+xml" href="https://tommykool.github.io/MyPortfolio/feed.xml"><link rel="alternate" type="application/json" href="https://tommykool.github.io/MyPortfolio/feed.json"><meta property="og:title" content="JavaScript Output"><meta property="og:site_name" content="CODINGWITHME"><meta property="og:description" content="JavaScript Display Possibilities JavaScript can 'display' data in different ways: To access an HTML element, JavaScript can use the document.getElementById(id) method. The id&hellip;"><meta property="og:url" content="https://tommykool.github.io/MyPortfolio/javascript-output.html"><meta property="og:type" content="article"><link rel="stylesheet" href="https://tommykool.github.io/MyPortfolio/assets/css/fontawesome-all.min.css?v=85514f933f9e0b82460af63f1a403fa5"><link rel="stylesheet" href="https://tommykool.github.io/MyPortfolio/assets/css/style.css?v=a43d11e6c8e1828dd0b983b73b3cdb13"><noscript><link rel="stylesheet" href="https://tommykool.github.io/MyPortfolio/assets/css/noscript.css?v=efa867a99f5064d6729e4dc2008ad50b"></noscript><script type="application/ld+json">{"@context":"http://schema.org","@type":"Article","mainEntityOfPage":{"@type":"WebPage","@id":"https://tommykool.github.io/MyPortfolio/javascript-output.html"},"headline":"JavaScript Output","datePublished":"2024-12-31T00:34+07:00","dateModified":"2024-12-31T00:34+07:00","description":"JavaScript Display Possibilities JavaScript can 'display' data in different ways: To access an HTML element, JavaScript can use the document.getElementById(id) method. The id&hellip;","author":{"@type":"Person","name":"QUANG MINH","url":"https://tommykool.github.io/MyPortfolio/authors/quang-minh/"},"publisher":{"@type":"Organization","name":"QUANG MINH"}}</script><style>#wrapper > .bg {
+               background-image: url(https://tommykool.github.io/MyPortfolio/assets/images/overlay.png), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(https://tommykool.github.io/MyPortfolio/media/website/graphic-design-pixel-digital-art-fantasy-art-wallpaper-preview.jpg);
+           }</style><noscript><style>img[loading] {
+                    opacity: 1;
+                }</style></noscript></head><body class="is-preload post-template"><div id="wrapper"><header id="header"><a class="logo" href="https://tommykool.github.io/MyPortfolio/home-page">Get Started!</a></header><main id="main"><article class="post"><header class="major"><time datetime="2024-12-31T00:34" class="date">December 31, 2024</time><h1>JavaScript Output</h1><p class="post__inner"></p></header><div class="post__inner post__entry"><h3 id="javascript-display-possibilities">JavaScript Display Possibilities</h3><p>JavaScript can "display" data in different ways:</p><ul><li>Writing into an HTML element, using<code>innerHTML</code></li><li>Writing into the HTML output using <code>document.write()</code>.<br></li><li>Writing into an alert box, using <code>window.alert()</code>.<br></li><li>Writing into the browser console, using <code>console.log()</code>.<br></li></ul><h3 id="using-innerhtml">Using innerHTML</h3><p>To access an HTML element, JavaScript can use the <code>document.getElementById(id)</code> method.<br><br>The<code>id</code>attribute defines the HTML element. The <code>innerHTML</code>property defines the HTML content:</p><pre class="line-numbers language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My First Paragraph&lt;/p&gt;
+
+&lt;p id="demo"&gt;&lt;/p&gt;
+
+&lt;script&gt;
+document.getElementById("demo").innerHTML = 5 + 6;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><div><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Try It Yourself Example</title></head><body><button onclick="openTryIt()">Try It Yourself</button><script>function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_dom";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }</script></body></html></div><blockquote class="blockquote">Changing the innerHTML property of an HTML element is a common way to display data in HTML.</blockquote><h3 id="using-documentwrite">Using document.write()</h3><p>For testing purposes, it is convenient to use<code>document.write()</code>:</p><pre class="line-numbers language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+document.write(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><div><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Try It Yourself Example</title></head><body><button onclick="openTryIt()">Try It Yourself</button><script>function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_write";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }</script></body></html></div><blockquote class="blockquote">WARNING!&nbsp;Using document.write() after an HTML document is loaded, will delete all existing HTML:</blockquote><h3 id="using-windowalert">Using window.alert()</h3><p>You can use an alert box to display data:</p><pre class="line-numbers language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+window.alert(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre><div><!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Try It Yourself Example</title></head><body><button onclick="openTryIt()">Try It Yourself</button><script>function openTryIt() {
+            // URL to open
+            const url = "https://www.w3schools.com/js/tryit.asp?filename=tryjs_output_alert";
+
+            // Open the URL in a new tab
+            const newWindow = window.open(url, "_blank");
+            if (!newWindow) {
+                alert("Popup blocked! Please allow popups for this website.");
+            }
+        }</script></body></html></div><p>You can skip the <code>window</code> keyword.<br><br>In JavaScript, the window object is the global scope object. This means that variables, properties, and methods by default belong to the window object. This also means that specifying the window keyword is optional:</p><pre class="line-numbers language-javascript"><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;script&gt;
+alert(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre></div><footer class="post__inner post__footer"><p class="post__last-updated">This article was updated on December 31, 2024</p><div class="post__share-tag-container"><div class="post__share"><button class="post__share-button js-post__share-button icon" aria-label="Share button"><i class="fas fa-share-alt"></i></button><div class="post__share-popup js-post__share-popup"></div></div></div><div class="post__bio"><div><h3><a href="https://tommykool.github.io/MyPortfolio/authors/quang-minh/" class="invert" rel="author">QUANG MINH</a></h3></div></div></footer></article><div><strong>You should also read:</strong></div><div class="posts"><article><header><time datetime="2024-12-31T01:06" class="date">December 31, 2024</time><h2><a href="https://tommykool.github.io/MyPortfolio/javascript-variables.html">JavaScript Variables</a></h2></header><p>Variables are Containers for Storing Data JavaScript Variables can be declared in 4 ways: In this first example, x, y, and z are&hellip;</p><ul class="actions special"><li><a href="https://tommykool.github.io/MyPortfolio/javascript-variables.html" class="button">Full Story</a></li></ul></article><article><header><time datetime="2024-12-31T00:55" class="date">December 31, 2024</time><h2><a href="https://tommykool.github.io/MyPortfolio/javascript-syntax.html">JavaScript Syntax</a></h2></header><p>JavaScript syntax is the set of rules, how JavaScript programs are constructed: // How to create variables: var x; let y; // How&hellip;</p><ul class="actions special"><li><a href="https://tommykool.github.io/MyPortfolio/javascript-syntax.html" class="button">Full Story</a></li></ul></article><article><header><time datetime="2024-12-31T00:40" class="date">December 31, 2024</time><h2><a href="https://tommykool.github.io/MyPortfolio/javascript-statements.html">JavaScript Statements</a></h2></header><p>JavaScript Programs A computer program is a list of "instructions" to be "executed" by a computer. In a programming language, these programming instructions&hellip;</p><ul class="actions special"><li><a href="https://tommykool.github.io/MyPortfolio/javascript-statements.html" class="button">Full Story</a></li></ul></article><article><header><time datetime="2024-12-31T00:24" class="date">December 31, 2024</time><h2><a href="https://tommykool.github.io/MyPortfolio/javascript-where-to.html">JavaScript Where To</a></h2></header><p>The &lt;script&gt; Tag&nbsp; In HTML, JavaScript code is inserted between tags. &lt;script&gt; document.getElementById("demo").innerHTML = "My First JavaScript"; &lt;/script&gt; Try It Yourself Example Try&hellip;</p><ul class="actions special"><li><a href="https://tommykool.github.io/MyPortfolio/javascript-where-to.html" class="button">Full Story</a></li></ul></article></div></main><footer id="copyright"><ul><li>© Massively</li><li>Design: <a href="https://html5up.net" target="_blank" rel="nofollow noopener">HTML5 UP</a></li><li>Powered by Publii</li></ul></footer></div><script src="https://tommykool.github.io/MyPortfolio/assets/js/jquery.min.js?v=c9771cc3e90e18f5336eedbd0fffb2cf"></script><script src="https://tommykool.github.io/MyPortfolio/assets/js/jquery.scrollex.min.js?v=f89065e3d988006af9791b44561d7c90"></script><script src="https://tommykool.github.io/MyPortfolio/assets/js/jquery.scrolly.min.js?v=1ed5a78bde1476875a40f6b9ff44fc14"></script><script src="https://tommykool.github.io/MyPortfolio/assets/js/browser.min.js?v=c07298dd19048a8a69ad97e754dfe8d0"></script><script src="https://tommykool.github.io/MyPortfolio/assets/js/breakpoints.min.js?v=81a479eb099e3b187613943b085923b8"></script><script src="https://tommykool.github.io/MyPortfolio/assets/js/util.min.js?v=4201a626f8c9b614a663b3a1d7d82615"></script><script src="https://tommykool.github.io/MyPortfolio/assets/js/main.min.js?v=56233c354bd814758be8bff42f7e13a5"></script><script>/*<![CDATA[*/var images=document.querySelectorAll("img[loading]");for(var i=0;i<images.length;i++){if(images[i].complete){images[i].classList.add("is-loaded")}else{images[i].addEventListener("load",function(){this.classList.add("is-loaded")},false)}};/*]]>*/</script></body></html>
