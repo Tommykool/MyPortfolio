@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://tommykool.github.io/MyPortfolio/sitemap.xml
